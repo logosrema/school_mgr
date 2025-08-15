@@ -3,7 +3,7 @@
 <html data-bs-theme="light" lang="en-US" dir="ltr">
 
   
-<!-- Mirrored from prium.github.io/falcon/v3.25.0/pages/authentication/card/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Aug 2025 14:01:32 GMT -->
+<!-- Mirrored from prium.github.io/falcon/v3.25.0/pages/errors/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Aug 2025 14:01:44 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
@@ -27,7 +27,7 @@
     <!-- ===============================================--><!--    Stylesheets--><!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
-    <link href="<?=ASSETS?>simplebar.min.css" rel="stylesheet">
+    <link href="<?=ASSETS?>simplebar/simplebar.min.css" rel="stylesheet">
     <link href="<?=ASSETS?>css/theme-rtl.min.css" rel="stylesheet" id="style-rtl">
     <link href="<?=ASSETS?>css/theme.min.css" rel="stylesheet" id="style-default">
     <link href="<?=ASSETS?>css/user-rtl.min.css" rel="stylesheet" id="user-style-rtl">
@@ -52,55 +52,23 @@
   <body>
     <!-- ===============================================--><!--    Main Content--><!-- ===============================================-->
     <main class="main" id="top">
-      <div class="container-fluid">
-        <div class="row min-vh-100 flex-center g-0">
-          <div class="col-lg-8 col-xxl-5 py-3 position-relative"><img class="bg-auth-circle-shape" src="<?=ASSETS?>img/icons/spot-illustrations/bg-shape.png" alt="" width="250"><img class="bg-auth-circle-shape-2" src="<?=ASSETS?>img/icons/spot-illustrations/shape-1.png" alt="" width="150">
-            <div class="card overflow-hidden z-1">
-              <div class="card-body p-0">
-                <div class="row g-0 h-100">
-                  <div class="col-md-5 text-center bg-card-gradient">
-                    <div class="position-relative p-4 pt-md-5 pb-md-7" data-bs-theme="light">
-                      <div class="bg-holder bg-auth-card-shape" style="background-image:url(../../../<?=ASSETS?>/img/icons/spot-illustrations/half-circle.png);"></div><!--/.bg-holder-->
-                      <div class="z-1 position-relative"><a class="link-light mb-4 font-sans-serif fs-5 d-inline-block fw-bolder" href="../../../index.html">falcon</a>
-                        <p class="opacity-75 text-white">With the power of Falcon, you can now focus only on functionaries for your digital products, while leaving the UI design on us!</p>
-                      </div>
-                    </div>
-                    <div class="mt-3 mb-4 mt-md-4 mb-md-5" data-bs-theme="light">
-                      <p class="text-white">Don't have an account?<br><a class="text-decoration-underline link-light" href="register.html">Get started!</a></p>
-                      <p class="mb-0 mt-4 mt-md-5 fs-10 fw-semi-bold text-white opacity-75">Read our <a class="text-decoration-underline text-white" href="#!">terms</a> and <a class="text-decoration-underline text-white" href="#!">conditions </a></p>
-                    </div>
-                  </div>
-                  <div class="col-md-7 d-flex flex-center">
-                    <div class="p-4 p-md-5 flex-grow-1">
-                      <div class="row flex-between-center">
-                        <div class="col-auto">
-                          <h3>Account Login</h3>
-                        </div>
-                      </div>
-                      <!-- <form> -->
-                        <div class="mb-3"><label class="form-label" for="card-email">Email address</label><input class="form-control" id="card-email" type="email" /></div>
-                        <div class="mb-3">
-                          <div class="d-flex justify-content-between"><label class="form-label" for="card-password">Password</label></div><input class="form-control" id="card-password" type="password" />
-                        </div>
-                        <div class="row flex-between-center">
-                          <div class="col-auto">
-                            <div class="form-check mb-0"><input class="form-check-input" type="checkbox" id="card-checkbox" checked="checked" /><label class="form-check-label mb-0" for="card-checkbox">Remember me</label></div>
-                          </div>
-                          <div class="col-auto"><a class="fs-10" href="forgot-password.html">Forgot Password?</a></div>
-                        </div>
-                        <div class="mb-3"><button class="btn btn-primary d-block w-100 mt-3 signin">Log in</button></div>
-                      <!-- </form> -->
-                      <div class="position-relative mt-4">
-                        <hr />
-                        <div class="divider-content-center">Pivo Apps </div>
-                      </div>
-                      <!-- <div class="row g-2 mt-2">
-                        <div class="col-sm-6"><a class="btn btn-outline-google-plus btn-sm d-block w-100" href="#"><span class="fab fa-google-plus-g me-2" data-fa-transform="grow-8"></span> google</a></div>
-                        <div class="col-sm-6"><a class="btn btn-outline-facebook btn-sm d-block w-100" href="#"><span class="fab fa-facebook-square me-2" data-fa-transform="grow-8"></span> facebook</a></div>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
+      <div class="container" data-layout="container">
+        <script>
+          var isFluid = JSON.parse(localStorage.getItem('isFluid'));
+          if (isFluid) {
+            var container = document.querySelector('[data-layout]');
+            container.classList.remove('container');
+            container.classList.add('container-fluid');
+          }
+        </script>
+        <div class="row flex-center min-vh-100 py-6 text-center">
+          <div class="col-sm-10 col-md-8 col-lg-6 col-xxl-5"><a class="d-flex flex-center mb-4" href="../../index.html"><img class="me-2" src="<?=ASSETS?>img/icons/spot-illustrations/falcon.png" alt="" width="58" /><span class="font-sans-serif text-primary fw-bolder fs-4 d-inline-block">falcon</span></a>
+            <div class="card">
+              <div class="card-body p-4 p-sm-5">
+                <div class="fw-black lh-1 text-300 fs-error">404</div>
+                <p class="lead mt-4 text-800 font-sans-serif fw-semi-bold w-md-75 w-xl-100 mx-auto">The page you're looking for is not found.</p>
+                <hr />
+                <p>Make sure the address is correct and that the page hasn't moved. If you think this is a mistake, <a href="mailto:info@exmaple.com">contact us</a>.</p><a class="btn btn-primary btn-sm mt-3" href="/school_mgr/admin/"><span class="fas fa-home me-2"></span>Take me home</a>
               </div>
             </div>
           </div>
@@ -123,33 +91,33 @@
         <p class="fs-10">Choose the perfect color mode for your app.</p>
         <div class="btn-group d-block w-100 btn-group-navbar-style">
           <div class="row gx-2">
-            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="theme" /><label class="btn d-inline-block btn-navbar-style fs-10" for="themeSwitcherLight"> <span class="hover-overlay mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../<?=ASSETS?>/img/generic/falcon-mode-default.jpg" alt=""/></span><span class="label-text">Light</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="theme" /><label class="btn d-inline-block btn-navbar-style fs-10" for="themeSwitcherDark"> <span class="hover-overlay mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../<?=ASSETS?>/img/generic/falcon-mode-dark.jpg" alt=""/></span><span class="label-text"> Dark</span></label></div>
-            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="theme" /><label class="btn d-inline-block btn-navbar-style fs-10" for="themeSwitcherAuto"> <span class="hover-overlay mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="../../../<?=ASSETS?>/img/generic/falcon-mode-auto.jpg" alt=""/></span><span class="label-text"> Auto</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherLight" name="theme-color" type="radio" value="light" data-theme-control="theme" /><label class="btn d-inline-block btn-navbar-style fs-10" for="themeSwitcherLight"> <span class="hover-overlay mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="<?=ASSETS?>img/generic/falcon-mode-default.jpg" alt=""/></span><span class="label-text">Light</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherDark" name="theme-color" type="radio" value="dark" data-theme-control="theme" /><label class="btn d-inline-block btn-navbar-style fs-10" for="themeSwitcherDark"> <span class="hover-overlay mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="<?=ASSETS?>img/generic/falcon-mode-dark.jpg" alt=""/></span><span class="label-text"> Dark</span></label></div>
+            <div class="col-4"><input class="btn-check" id="themeSwitcherAuto" name="theme-color" type="radio" value="auto" data-theme-control="theme" /><label class="btn d-inline-block btn-navbar-style fs-10" for="themeSwitcherAuto"> <span class="hover-overlay mb-2 rounded d-block"><img class="img-fluid img-prototype mb-0" src="<?=ASSETS?>img/generic/falcon-mode-auto.jpg" alt=""/></span><span class="label-text"> Auto</span></label></div>
           </div>
         </div>
         <hr />
         <div class="d-flex justify-content-between">
-          <div class="d-flex align-items-start"><img class="me-2" src="../../../<?=ASSETS?>/img/icons/left-arrow-from-left.svg" width="20" alt="" />
+          <div class="d-flex align-items-start"><img class="me-2" src="<?=ASSETS?>img/icons/left-arrow-from-left.svg" width="20" alt="" />
             <div class="flex-1">
               <h5 class="fs-9">RTL Mode</h5>
-              <p class="fs-10 mb-0">Switch your language direction </p><a class="fs-10" href="../../../documentation/customization/configuration.html">RTL Documentation</a>
+              <p class="fs-10 mb-0">Switch your language direction </p><a class="fs-10" href="../../documentation/customization/configuration.html">RTL Documentation</a>
             </div>
           </div>
           <div class="form-check form-switch"><input class="form-check-input ms-0" id="mode-rtl" type="checkbox" data-theme-control="isRTL" /></div>
         </div>
         <hr />
         <div class="d-flex justify-content-between">
-          <div class="d-flex align-items-start"><img class="me-2" src="../../../<?=ASSETS?>/img/icons/arrows-h.svg" width="20" alt="" />
+          <div class="d-flex align-items-start"><img class="me-2" src="<?=ASSETS?>img/icons/arrows-h.svg" width="20" alt="" />
             <div class="flex-1">
               <h5 class="fs-9">Fluid Layout</h5>
-              <p class="fs-10 mb-0">Toggle container layout system </p><a class="fs-10" href="../../../documentation/customization/configuration.html">Fluid Documentation</a>
+              <p class="fs-10 mb-0">Toggle container layout system </p><a class="fs-10" href="../../documentation/customization/configuration.html">Fluid Documentation</a>
             </div>
           </div>
           <div class="form-check form-switch"><input class="form-check-input ms-0" id="mode-fluid" type="checkbox" data-theme-control="isFluid" /></div>
         </div>
         <hr />
-        <div class="d-flex align-items-start"><img class="me-2" src="<?=ASSETS?>/img/icons/paragraph.svg" width="20" alt="" />
+        <div class="d-flex align-items-start"><img class="me-2" src="<?=ASSETS?>img/icons/paragraph.svg" width="20" alt="" />
           <div class="flex-1">
             <h5 class="fs-9 d-flex align-items-center">Navigation Position</h5>
             <p class="fs-10 mb-2">Select a suitable navigation system for your web application </p>
@@ -164,16 +132,16 @@
         <hr />
         <h5 class="fs-9 d-flex align-items-center">Vertical Navbar Style</h5>
         <p class="fs-10 mb-0">Switch between styles for your vertical navbar </p>
-        <p> <a class="fs-10" href="../../../modules/components/navs-and-tabs/vertical-navbar.html#navbar-styles">See Documentation</a></p>
+        <p> <a class="fs-10" href="../../modules/components/navs-and-tabs/vertical-navbar.html#navbar-styles">See Documentation</a></p>
         <div class="btn-group d-block w-100 btn-group-navbar-style">
           <div class="row gx-2">
-            <div class="col-6"><input class="btn-check" id="navbar-style-transparent" type="radio" name="navbarStyle" value="transparent" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-transparent"> <img class="img-fluid img-prototype" src="../../../<?=ASSETS?>/img/generic/default.png" alt="" /><span class="label-text"> Transparent</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-inverted" type="radio" name="navbarStyle" value="inverted" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-inverted"> <img class="img-fluid img-prototype" src="../../../<?=ASSETS?>/img/generic/inverted.png" alt="" /><span class="label-text"> Inverted</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-card" type="radio" name="navbarStyle" value="card" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-card"> <img class="img-fluid img-prototype" src="../../../<?=ASSETS?>/img/generic/card.png" alt="" /><span class="label-text"> Card</span></label></div>
-            <div class="col-6"><input class="btn-check" id="navbar-style-vibrant" type="radio" name="navbarStyle" value="vibrant" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-vibrant"> <img class="img-fluid img-prototype" src="../../../<?=ASSETS?>/img/generic/vibrant.png" alt="" /><span class="label-text"> Vibrant</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-transparent" type="radio" name="navbarStyle" value="transparent" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-transparent"> <img class="img-fluid img-prototype" src="<?=ASSETS?>img/generic/default.png" alt="" /><span class="label-text"> Transparent</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-inverted" type="radio" name="navbarStyle" value="inverted" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-inverted"> <img class="img-fluid img-prototype" src="<?=ASSETS?>img/generic/inverted.png" alt="" /><span class="label-text"> Inverted</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-card" type="radio" name="navbarStyle" value="card" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-card"> <img class="img-fluid img-prototype" src="<?=ASSETS?>img/generic/card.png" alt="" /><span class="label-text"> Card</span></label></div>
+            <div class="col-6"><input class="btn-check" id="navbar-style-vibrant" type="radio" name="navbarStyle" value="vibrant" data-theme-control="navbarStyle" /><label class="btn d-block w-100 btn-navbar-style fs-10" for="navbar-style-vibrant"> <img class="img-fluid img-prototype" src="<?=ASSETS?>img/generic/vibrant.png" alt="" /><span class="label-text"> Vibrant</span></label></div>
           </div>
         </div>
-        <div class="text-center mt-5"><img class="mb-4" src="../../../<?=ASSETS?>/img/icons/spot-illustrations/47.png" alt="" width="120" />
+        <div class="text-center mt-5"><img class="mb-4" src="<?=ASSETS?>img/icons/spot-illustrations/47.png" alt="" width="120" />
           <h5>Like What You See?</h5>
           <p class="fs-10">Get Falcon now and create beautiful dashboards with hundreds of widgets.</p><a class="mb-3 btn btn-primary" href="https://themes.getbootstrap.com/product/falcon-admin-dashboard-webapp-template/" target="_blank">Purchase</a>
         </div>
@@ -187,7 +155,6 @@
     </a>
 
     <!-- ===============================================--><!--    JavaScripts--><!-- ===============================================-->
-    <script src="<?=ASSETS?>js/jquery.min.js"></script>
     <script src="<?=ASSETS?>popper/popper.min.js"></script>
     <script src="<?=ASSETS?>bootstrap/bootstrap.min.js"></script>
     <script src="<?=ASSETS?>anchorjs/anchor.min.js"></script>
@@ -196,9 +163,8 @@
     <script src="<?=ASSETS?>lodash/lodash.min.js"></script>
     <script src="<?=ASSETS?>list.js/list.min.js"></script>
     <script src="<?=ASSETS?>js/theme.js"></script>
-    <script src="<?=ASSETS?>js/signin.js"></script>
   </body>
 
 
-<!-- Mirrored from prium.github.io/falcon/v3.25.0/pages/authentication/card/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Aug 2025 14:01:32 GMT -->
+<!-- Mirrored from prium.github.io/falcon/v3.25.0/pages/errors/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 15 Aug 2025 14:01:44 GMT -->
 </html>

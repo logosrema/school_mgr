@@ -25,8 +25,6 @@ class App extends Controller
             array_splice($url, 0, 3);
             $this->params = !empty($url) ? array_values($url) : [];
 
-          ;
-
             if (file_exists(CONTROLLER . $this->AdminController . ".php")) {
 
                 $this->AdminController = new $this->AdminController;
@@ -35,13 +33,13 @@ class App extends Controller
 
                     call_user_func_array([$this->AdminController, $this->action], $this->params);
                 } else {
-                  //  (new adminController)->notfound();
+                    (new adminController)->notfound();
                   //  echo "Method '{$this->action}' not found in '{$this->AdminController}'";
                 }
 
             } else {
 
-                echo "sdsdfsd";
+    
                // (new adminController)->notfound();
                 //echo "Controller '{$this->AdminController}' not found";
             }

@@ -1,6 +1,4 @@
 <?php
-
-
 define("ROOT", $_SERVER["DOCUMENT_ROOT"].'/school_mgr/');
 define("APP", ROOT.'app/');
 define("VIEWS",APP.'views/');

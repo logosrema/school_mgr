@@ -1,0 +1,15 @@
+{
+    "name": "logos/school_mgr",
+    "authors": [
+        {
+            "name": "Bra Nii Black",
+            "email": "Braniiblack@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "app/"
+        ]
+    }
+}

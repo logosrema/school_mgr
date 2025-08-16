@@ -1,4 +1,9 @@
+<?php 
+// if (session_status() == PHP_SESSION_NONE) {
+//   session_start();
+// }
 
+?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en-US" dir="ltr">
 
@@ -27,6 +32,7 @@
     <!-- ===============================================--><!--    Stylesheets--><!-- ===============================================-->
     <link rel="preconnect" href="https://fonts.gstatic.com/">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="<?=ASSETS?>toast/toast.css" rel="stylesheet">
     <link href="<?=ASSETS?>simplebar.min.css" rel="stylesheet">
     <link href="<?=ASSETS?>css/theme-rtl.min.css" rel="stylesheet" id="style-rtl">
     <link href="<?=ASSETS?>css/theme.min.css" rel="stylesheet" id="style-default">
@@ -60,7 +66,7 @@
                 <div class="row g-0 h-100">
                   <div class="col-md-5 text-center bg-card-gradient">
                     <div class="position-relative p-4 pt-md-5 pb-md-7" data-bs-theme="light">
-                      <div class="bg-holder bg-auth-card-shape" style="background-image:url(../../../<?=ASSETS?>/img/icons/spot-illustrations/half-circle.png);"></div><!--/.bg-holder-->
+                      <div class="bg-holder bg-auth-card-shape" style="background-image:url(<?=ASSETS?>/img/icons/spot-illustrations/half-circle.png);"></div><!--/.bg-holder-->
                       <div class="z-1 position-relative"><a class="link-light mb-4 font-sans-serif fs-5 d-inline-block fw-bolder" href="../../../index.html">falcon</a>
                         <p class="opacity-75 text-white">With the power of Falcon, you can now focus only on functionaries for your digital products, while leaving the UI design on us!</p>
                       </div>
@@ -188,6 +194,7 @@
 
     <!-- ===============================================--><!--    JavaScripts--><!-- ===============================================-->
     <script src="<?=ASSETS?>js/jquery.min.js"></script>
+    <script src="<?=ASSETS?>toast/toast-plugin.js"></script>
     <script src="<?=ASSETS?>popper/popper.min.js"></script>
     <script src="<?=ASSETS?>bootstrap/bootstrap.min.js"></script>
     <script src="<?=ASSETS?>anchorjs/anchor.min.js"></script>

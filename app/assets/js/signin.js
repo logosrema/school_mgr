@@ -11,10 +11,13 @@ $(function() {
 
 
   const request = (url, params) => {
-    let elem = $(".load");
-    elem.addClass("bx-loader bx-spin").removeClass("bx-check-shieldn");
-    setTimeout(() => {
+   // let elem = $(".load");
+   // elem.addClass("bx-loader bx-spin").removeClass("bx-check-shieldn");
+   // setTimeout(() => {
       $.post(url, params, function(result) {
+        console.log(result)
+        return
+
         if (JSON.parse(result).type == "success") {
           elem.removeClass("bx-loader bx-spin").addClass("bx-check-shieldn");
           showToast(
@@ -34,11 +37,11 @@ $(function() {
           );
         }
       });
-    }, 1000);
+   // }, 1000);
   };
 
   $(".signin").on("click", function(evt) {
-    console.log("hello")
+   // console.log("hello")
     evt.preventDefault();
     let params = {
       email: $("#card-email").val().trim(),

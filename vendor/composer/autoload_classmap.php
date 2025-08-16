@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AdminModel' => $baseDir . '/app/model/AdminModel.php',
     'App' => $baseDir . '/app/core/App.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Controller' => $baseDir . '/app/core/Controller.php',

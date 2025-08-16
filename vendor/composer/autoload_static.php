@@ -6,7 +6,30 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit536291ddd1e3936329674682cc1c47fb
 {
+    public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'ModernPHPException\\' => 19,
+        ),
+        'C' => 
+        array (
+            'Codedungeon\\PHPCliColors\\' => 25,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'ModernPHPException\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/brenno-duarte/modern-php-exception/src',
+        ),
+        'Codedungeon\\PHPCliColors\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/codedungeon/php-cli-colors/src',
+        ),
+    );
+
     public static $classMap = array (
+        'AdminModel' => __DIR__ . '/../..' . '/app/model/AdminModel.php',
         'App' => __DIR__ . '/../..' . '/app/core/App.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Controller' => __DIR__ . '/../..' . '/app/core/Controller.php',
@@ -18,6 +41,8 @@ class ComposerStaticInit536291ddd1e3936329674682cc1c47fb
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit536291ddd1e3936329674682cc1c47fb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit536291ddd1e3936329674682cc1c47fb::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit536291ddd1e3936329674682cc1c47fb::$classMap;
 
         }, null, ClassLoader::class);

@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'logos/school_mgr',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '97b73edf57c8e91d2913cf1c0a5473db2a546f21',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'brenno-duarte/modern-php-exception' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'reference' => '6c8839d70339580c0d1227b579c6d1ddcdbd5800',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../brenno-duarte/modern-php-exception',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'codedungeon/php-cli-colors' => array(
+            'pretty_version' => '1.12.2',
+            'version' => '1.12.2.0',
+            'reference' => 'e346156f75717140a3dd622124d2ec686aa7ff8e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../codedungeon/php-cli-colors',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'logos/school_mgr' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '97b73edf57c8e91d2913cf1c0a5473db2a546f21',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

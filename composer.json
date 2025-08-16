@@ -6,7 +6,9 @@
             "email": "Braniiblack@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "brenno-duarte/modern-php-exception": "2.2"
+    },
     "autoload": {
         "classmap": [
             "app/"
